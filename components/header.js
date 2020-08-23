@@ -1,57 +1,38 @@
 import Link from "next/link";
 import { useState } from "react";
 
-function Header() {
-  const [isExpanded, toggleExpansion] = useState(false);
 
+const NavLinks = () => {
   return (
-    <header className="bg-teal-500">
-      <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:flex-no-wrap md:p-8">
-        <div className="flex items-center">
-          <img
-            src="tailwind-logo.svg"
-            className="w-10 mr-3 text-white"
-          />
-
-          <Link href="/">
-            <a className="text-xl font-bold text-white">
-              Next.js Starter Tailwind
-            </a>
-          </Link>
-        </div>
-
-        <button
-          className="flex items-center block px-3 py-2 text-white border border-white rounded md:hidden"
-          onClick={() => toggleExpansion(!isExpanded)}
-        >
-          <svg
-            className="w-3 h-3 fill-current"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-        </button>
-
-        <ul
-          className={`${
-            isExpanded ? `block` : `hidden`
-          } md:flex flex-col md:flex-row md:items-center md:justify-center text-sm w-full md:w-auto`}
-        >
+    <>
           {[
             { title: "Home", route: "/" },
             { title: "About", route: "/about" }
           ].map(navigationItem => (
-            <li className="mt-3 md:mt-0 md:ml-6" key={navigationItem.title}>
-              <Link href={navigationItem.route}>
-                <a className="block text-white">{navigationItem.title}</a>
+              <Link href={navigationItem.route} key={navigationItem.title}>
+                <a className="mr-5 hover:text-gray-900">{navigationItem.title}</a>
               </Link>
-            </li>
           ))}
-        </ul>
-      </div>
-    </header>
+        </>
+  )
+}
+
+
+function Header() {
+  const [isExpanded, toggleExpansion] = useState(false); 
+
+  return (
+    <header className="text-gray-700 body-font">
+  <div className="container flex flex-col flex-wrap items-center p-5 mx-auto md:flex-row">
+    <a className="flex items-center mb-4 font-medium text-gray-900 title-font md:mb-0">
+      <img src="/logo.png" alt="" className="w-16 h-16 p-2 text-white rounded-full"/>
+    </a>
+    <nav className="flex flex-wrap items-center justify-center text-base md:ml-auto md:mr-auto">
+      <NavLinks />
+    </nav>
+    <button className="inline-flex items-center px-3 py-1 mt-4 text-base bg-yellow-400 border-0 rounded focus:outline-none hover:bg-yellow-500 md:mt-0">Get Involved</button>
+  </div>
+</header>
   );
 }
 
