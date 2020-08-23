@@ -1,6 +1,6 @@
 {
-  "name": "next-starter-tailwind",
-  "version": "1.1.0",
+  "name": "diftk-next",
+  "version": "1.0.0",
   "description": "Next.js starter styled with Tailwind CSS",
   "main": "index.js",
   "scripts": {
