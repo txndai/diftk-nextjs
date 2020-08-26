@@ -1,7 +1,7 @@
 {
   "name": "diftk-next",
-  "version": "1.0.0",
-  "description": "Next.js starter styled with Tailwind CSS",
+  "version": "2.0.0",
+  "description": "DIFTK website iteration two",
   "main": "index.js",
   "scripts": {
     "analyze:tailwind-css-class-order": "rustywind --dry-run .",
@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/taylorbryant/next-starter-tailwind.git"
+    "url": "https://github.com/txndai/diftk-nextjs"
   },
-  "author": "Taylor Bryant",
+  "author": "GT Fari",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/taylorbryant/next-starter-tailwind/issues"
+    "url": "https://github.com/txndai/diftk-nextjs/issues"
   },
-  "homepage": "https://github.com/taylorbryant/next-starter-tailwind#readme",
+  "homepage": "https://github.com/txndai/diftk-nextjs#readme",
   "dependencies": {
     "next": "9.5.2",
     "react": "16.13.1",
