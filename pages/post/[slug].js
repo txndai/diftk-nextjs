@@ -1,7 +1,7 @@
 import { GraphQLClient } from "graphql-request";
 import Link from "next/link";
 import Date from '../../components/date'
-import ReactMarkdown from 'react-markdown'
+import ReactMarkdown from 'react-markdown/with-html'
 
 
 
@@ -83,9 +83,9 @@ const blogPost = ({ blogPost }) => {
             <div className="mb-2 text-xl font-bold text-gray-900">
               {blogPost.title}
             </div>
-            {/* <p className="text-base text-gray-700">{blogPost.content}</p> */}
-            {/* <div dangerouslySetInnerHTML={{ __html: blogPost.content }} /> */}
-            <ReactMarkdown source={blogPost.content}/>
+            <article className="prose lg:prose-xl">
+                <ReactMarkdown source={blogPost.content} escapeHtml={false}/>
+            </article>
           </div>
           <div className="flex items-center">
             <div className="text-sm">
