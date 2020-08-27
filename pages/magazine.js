@@ -1,6 +1,6 @@
 import Layout from "../components/layout";
 
-function AboutPage({ og }) {
+function Magazine({ og }) {
   return (
     <Layout>
       <div className="flex flex-col space-y-6 md:flex-row md:space-x-6 md:space-y-0">
@@ -37,9 +37,9 @@ function AboutPage({ og }) {
   );
 }
 
-export default AboutPage;
+export default Magazine;
 
-AboutPage.getInitialProps = () => {
+Magazine.getInitialProps = () => {
   return {
     data: {
       og: {

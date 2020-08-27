@@ -1,6 +1,6 @@
 import Layout from "../components/layout";
 
-function AboutPage({ og }) {
+function Projects({ og }) {
   return (
     <Layout>
       <div className="flex flex-col space-y-6 md:flex-row md:space-x-6 md:space-y-0">
@@ -37,9 +37,9 @@ function AboutPage({ og }) {
   );
 }
 
-export default AboutPage;
+export default Projects;
 
-AboutPage.getInitialProps = () => {
+Projects.getInitialProps = () => {
   return {
     data: {
       og: {
