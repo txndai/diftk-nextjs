@@ -90,17 +90,17 @@ const blogPost = ({ blogPost }) => {
                     <ReactMarkdown source={blogPost.content} escapeHtml={false}/>
                 </article>
             </div>
-            <div className="flex items-center">
-                <div className="text-sm">
-                <p className="leading-none text-gray-900">{blogPost.author.name}</p>
-                <p className="text-gray-600"><Date dateString={blogPost.date} /></p>
+            <div className="flex items-center justify-center">
+                <div className="inline-block text-sm">
+                <p className="leading-none text-center text-gray-900">{blogPost.author.name}</p>
+                <p className="text-center text-gray-600"><Date dateString={blogPost.date} /></p>
                 </div>
             </div>
             </div>
         </div>
-        <div className="max-w-lg mx-auto">
+        <div className="flex items-center justify-center max-w-lg mx-auto">
             <Link href="/magazine">
-            <a>Back to all blogPosts</a>
+            <a>Back to Magazine</a>
             </Link>
         </div>
         </div>
