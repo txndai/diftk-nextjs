@@ -27,7 +27,7 @@ function Header() {
     <header className="text-gray-700 bg-gray-600 body-font">
   <div className="container flex flex-col flex-wrap items-center px-5 mx-auto md:flex-row">
     <a className="flex items-center mb-4 font-medium text-gray-900 title-font md:mb-0">
-      <img src="/logo.png" alt="" className="w-16 h-16 p-2 pb-3 text-white"/>
+      <img src="/icons8-jake.svg" alt="" className="w-16 h-16 p-2 pb-3 text-white"/>
     </a>
     <nav className="flex flex-wrap items-center justify-center text-base md:ml-auto md:mr-auto">
       <NavLinks />

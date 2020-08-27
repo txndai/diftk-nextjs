@@ -1,6 +1,8 @@
 import Layout from "../components/layout";
 import { GraphQLClient } from "graphql-request";
 import Link from "next/link";
+import Date from '../components/date'
+
 
 const graphcms = new GraphQLClient(process.env.GRAPHQL_URL_ENDPOINT);
 
@@ -60,7 +62,7 @@ function Magazine({ og, blogPosts }) {
                     <p className="leading-none text-gray-900">
                       {post.author.name}
                     </p>
-                    <p className="text-gray-600">{post.date}</p>
+                    <p className="text-gray-600"><Date dateString={post.date} /></p>
                   </div>
                 </div>
               </div>

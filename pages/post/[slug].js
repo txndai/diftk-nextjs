@@ -1,5 +1,9 @@
 import { GraphQLClient } from "graphql-request";
 import Link from "next/link";
+import Date from '../../components/date'
+import ReactMarkdown from 'react-markdown'
+
+
 
 const graphcms = new GraphQLClient(process.env.GRAPHQL_URL_ENDPOINT);
 
@@ -64,7 +68,8 @@ export async function getStaticPaths() {
   };
 }
 
-export default ({ blogPost }) => {
+const blogPost = ({ blogPost }) => {
+    console.log(blogPost)
   return (
     <div className="min-h-screen py-16 bg-gray-100">
       <div className="max-w-lg mx-auto mb-16 rounded-lg shadow-lg">
@@ -79,12 +84,13 @@ export default ({ blogPost }) => {
               {blogPost.title}
             </div>
             {/* <p className="text-base text-gray-700">{blogPost.content}</p> */}
-            <div dangerouslySetInnerHTML={{ __html: blogPost.content }} />
+            {/* <div dangerouslySetInnerHTML={{ __html: blogPost.content }} /> */}
+            <ReactMarkdown source={blogPost.content}/>
           </div>
           <div className="flex items-center">
             <div className="text-sm">
               <p className="leading-none text-gray-900">{blogPost.author.name}</p>
-              <p className="text-gray-600">{blogPost.date}</p>
+              <p className="text-gray-600"><Date dateString={blogPost.date} /></p>
             </div>
           </div>
         </div>
@@ -97,3 +103,5 @@ export default ({ blogPost }) => {
     </div>
   );
 };
+
+export default blogPost;
