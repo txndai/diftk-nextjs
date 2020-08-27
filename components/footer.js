@@ -4,14 +4,14 @@ function Footer() {
       <ul className="flex items-center justify-between max-w-4xl p-4 mx-auto text-sm text-white md:p-8">
         <li>
           Created by{" "}
-          <a href="https://bryant.io" target="_blank" className="font-bold">
-            Taylor Bryant
+          <a href="https://goosebumps.co.zw" target="_blank" className="font-bold">
+            Goosebumps Collective
           </a>
         </li>
 
         <li>
           <a
-            href="https://github.com/oddstronaut/tailwind-next"
+            href="https://github.com/txndai/diftk-nextjs/"
             target="_blank"
             className="font-bold"
           >

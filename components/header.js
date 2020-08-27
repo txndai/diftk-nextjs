@@ -24,7 +24,7 @@ function Header() {
   const [isExpanded, toggleExpansion] = useState(false); 
 
   return (
-    <header className="text-gray-700 bg-gray-600 body-font">
+    <header className="text-gray-700 body-font">
   <div className="container flex flex-col flex-wrap items-center px-5 mx-auto md:flex-row">
     <a className="flex items-center mb-4 font-medium text-gray-900 title-font md:mb-0">
       <img src="/icons8-jake.svg" alt="" className="w-16 h-16 p-2 pb-3 text-white"/>
