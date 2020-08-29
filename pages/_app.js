@@ -15,8 +15,8 @@ function MyApp({ Component, pageProps }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@doit4thekidz_" />
         <meta property="og:image" content={og ? og.image : `http://doit4thekidz.org/wp-content/uploads/2020/01/logo-png-file-200x200.png`} />
-
-
+        {/* This is the favicon */}
+        <link rel="shortcut icon" href="/tailwind-logo.svg" />
         <title>{title || `DIFTK`}</title>
       </Head>
 
