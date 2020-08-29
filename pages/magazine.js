@@ -61,12 +61,12 @@ function Magazine({ og, blogPosts }) {
         {blogPosts.map((post) => {
           return (
             <Link key={post.id} as={`/post/${post.slug}`} href="/post/[slug]">
-              <a className="flex flex-col items-center justify-center max-w-sm p-4 mx-auto mb-6 md:w-1/3 md:mb-0">
+              <a className="flex flex-col items-center justify-center max-w-sm p-4 mx-auto mb-6 md:w-1/3 md:mb-0 blog-card">
               
-                  <div className="w-full h-56 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style={{ backgroundImage: `url(${post.image.url})` }}
+                  <div className="w-full h-56 bg-gray-300 bg-center bg-cover rounded-lg shadow-md image-box" style={{ backgroundImage: `url(${post.image.url})` }}
                       title={post.title}></div>
 
-                  <div className="p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg w-70">
+                  <div className="inline-block p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg text-box ">
                     
                     <div className="inline-flex header-content ">
                       <div className="flex-1 w-4 h-4 m-1 bg-purple-100 rounded-full category-badge m">
