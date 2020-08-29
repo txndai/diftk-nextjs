@@ -23,6 +23,7 @@ export async function getStaticProps() {
           author {
             name
           }
+          categories
         }
       }
     `
@@ -41,13 +42,6 @@ function Magazine({ og, blogPosts }) {
 
     return (
     <Layout>
-
-{/* <!-- component -->
-<style>
-  .w-70 {
-    width: 20rem;
-	}
-</style> */}
 
 <section className="text-gray-700 blog body-font">
       <div className="container px-5 py-24 mx-auto">
@@ -69,17 +63,24 @@ function Magazine({ og, blogPosts }) {
                   <div className="inline-block p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg text-box ">
                     
                     <div className="inline-flex header-content ">
-                      <div className="flex-1 w-4 h-4 m-1 bg-purple-100 rounded-full category-badge m">
-                        <div className="w-2 h-2 m-1 bg-purple-500 rounded-full " ></div>
+                      <div className="flex-1 w-4 h-4 m-1 bg-blue-100 rounded-full category-badge m">
+                        <div className="w-2 h-2 m-1 bg-blue-500 rounded-full " ></div>
                       </div>
-                      <div className="flex-1 text-sm category-title"> PHP</div>
+                      {post.categories.map((category) => {
+                          return (
+                            <span key={category} className='flex-1 text-sm category-title'>{category}</span>
+                        );
+                        })}
                     </div>
                     <div className="h-12 font-medium title-post">{post.title}</div>
 
-                    <p className="h-20 overflow-y-scroll leading-relaxed md:text-xs lg:text-sm summary-post">{post.summary}
-                    </p>
-                      <button className="block p-2 mt-4 text-sm text-blue-500 bg-blue-100 rounded read-more"><span className="">Read more</span></button>
-                  
+                    <p className="h-20 overflow-y-scroll leading-relaxed md:text-xs lg:text-sm summary-post">{post.summary}</p>
+                    <div className='flex flex-row justify-between mt-4'>
+                      <span className='flex flex-col'>
+                        <p className="inline-block text-xs text-gray-600 border-b-2 border-blue-500 w-fit-content">{post.author.name}</p>
+                        <p className="text-xs text-gray-500 "><Date dateString={post.date} /></p>
+                      </span>
+                    </div>
                   </div>
                   
             </a>
@@ -90,37 +91,9 @@ function Magazine({ og, blogPosts }) {
       </div>
       </div>
     </section>
-
-      {/* {blogPosts.map((post) => {
-        return (
-          <Link key={post.id} as={`/post/${post.slug}`} href="/post/[slug]">
-            <a className="flex max-w-lg mx-auto mb-16 rounded-lg shadow-lg">
-              <div
-                className="flex-none h-48 overflow-hidden text-center bg-cover rounded-t lg:h-auto lg:w-48 lg:rounded-t-none lg:rounded-l"
-                style={{ backgroundImage: `url(${post.image.url})` }}
-                title={post.title}
-              />
-              <div className="flex flex-col justify-between p-4 leading-normal bg-white rounded-b lg:rounded-b-none lg:rounded-r">
-                <div className="mb-8">
-                  <div className="mb-2 text-xl font-bold text-gray-900">
-                    {post.title}
-                  </div>
-                  <p className="text-base text-gray-700">{post.summary}</p>
-                </div>
-                <div className="flex items-center">
-                  <div className="text-sm">
-                    <p className="leading-none text-gray-900">
-                      {post.author.name}
-                    </p>
-                    <p className="text-gray-600"><Date dateString={post.date} /></p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </Link>
-        );
-      })} */}
     </Layout>
+
+
   );
 }
 

@@ -75,20 +75,22 @@ const blogPost = ({ blogPost }) => {
   return (
     <Layout>
         <div className="min-h-screen py-16">
-        <div className="max-w-lg mx-auto mb-16 rounded-lg shadow-lg">
+        <div className="max-w-3xl mx-auto mb-16 rounded-lg ">
             <div
-            className="flex-none h-48 overflow-hidden text-center bg-cover rounded-t"
+            className="flex-none h-48 overflow-hidden text-center bg-center bg-cover rounded-t"
             style={{ backgroundImage: `url(${blogPost.image.url})` }}
             title={blogPost.title}
             />
             <div className="flex flex-col justify-between p-4 leading-normal bg-white rounded-b lg:rounded-b-none lg:rounded-r">
             <div className="mb-8">
-                <div className="mb-2 text-xl font-bold text-gray-900">
+                <div className="my-4 text-4xl font-bold text-center text-gray-800 underline-custom">
                 {blogPost.title}
                 </div>
-                <article className="prose lg:prose-xl">
-                    <ReactMarkdown source={blogPost.content} escapeHtml={false}/>
-                </article>
+                <span className='flex items-center justify-center'>
+                  <article className="prose lg:prose-xl">
+                      <ReactMarkdown source={blogPost.content} escapeHtml={false}/>
+                  </article>
+                </span>
             </div>
             <div className="flex items-center justify-center">
                 <div className="inline-block text-sm">

@@ -4,7 +4,11 @@ module.exports = {
   },
   purge: ["./components/**/*.js", "./pages/**/*.js"],
   theme: {
-    extend: {},
+    extend: {
+      width: {
+        'fit-content': 'fit-content',
+      }
+    },
   },
   variants: {},
   plugins: [
