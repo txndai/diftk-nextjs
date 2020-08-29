@@ -102,7 +102,7 @@ const blogPost = ({ blogPost }) => {
         </div>
         <div className="flex items-center justify-center max-w-lg mx-auto">
             <Link href="/magazine">
-            <a>Back to Magazine</a>
+              <a>Back to Magazine</a>
             </Link>
         </div>
         </div>

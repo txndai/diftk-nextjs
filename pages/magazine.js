@@ -68,7 +68,7 @@ function Magazine({ og, blogPosts }) {
                       </div>
                       {post.categories.map((category) => {
                           return (
-                            <span key={category} className='flex-1 text-sm category-title'>{category}</span>
+                            <span key={category} className='flex items-center justify-center flex-1 h-auto mx-1 text-xs leading-none category-title'>{category}</span>
                         );
                         })}
                     </div>
