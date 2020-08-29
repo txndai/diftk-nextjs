@@ -60,7 +60,7 @@ function Magazine({ og, blogPosts }) {
                   <div className="w-full h-56 bg-gray-300 bg-center bg-cover rounded-lg shadow-md image-box" style={{ backgroundImage: `url(${post.image.url})` }}
                       title={post.title}></div>
 
-                  <div className="inline-block p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg text-box ">
+                  <div className="z-10 inline-block p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg text-box">
                     
                     <div className="inline-flex header-content ">
                       <div className="flex-1 w-4 h-4 m-1 bg-blue-100 rounded-full category-badge m">
