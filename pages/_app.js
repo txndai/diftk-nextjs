@@ -1,4 +1,5 @@
 import "../css/index.css";
+import "../css/scrollbar.css";
 import Head from 'next/head'
 
 function MyApp({ Component, pageProps }) {

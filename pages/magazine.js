@@ -76,8 +76,8 @@ function Magazine({ og, blogPosts }) {
                     </div>
                     <div className="h-12 font-medium title-post">{post.title}</div>
 
-                    <div className="h-20 overflow-hidden leading-relaxed md:text-xs lg:text-sm summary-post ">{post.summary}
-                    </div>
+                    <p className="h-20 overflow-y-scroll leading-relaxed md:text-xs lg:text-sm summary-post">{post.summary}
+                    </p>
                       <button className="block p-2 mt-4 text-sm text-blue-500 bg-blue-100 rounded read-more"><span className="">Read more</span></button>
                   
                   </div>

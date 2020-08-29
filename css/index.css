@@ -1,11 +1,8 @@
 @tailwind base;
 
-.summary-post{
-    -webkit-box-shadow: inset 0px -29px 17px -12px rgba(82,82,82,0.16);
-    -moz-box-shadow: inset 0px -29px 17px -12px rgba(82,82,82,0.16);
-    box-shadow: inset 0px -29px 17px -12px rgba(82,82,82,0.16);
+.summary-post::-webkit-scrollbar { display: none;}
+.summary-post{ scrollbar-width: none;}
 
-}
 
 @tailwind components;
 @tailwind utilities;

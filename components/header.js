@@ -6,7 +6,6 @@ const NavLinks = () => {
   return (
     <>
           {[
-            { title: "Home", route: "/" },
             { title: "Magazine", route: "/magazine" },
             { title: "Projects", route: "/projects" },
             { title: "About", route: "/about" }
