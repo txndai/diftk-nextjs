@@ -57,8 +57,10 @@ function Magazine({ og, blogPosts }) {
             <Link key={post.id} as={`/post/${post.slug}`} href="/post/[slug]">
               <a className="flex flex-col items-center justify-center max-w-sm p-4 mx-auto mb-6 md:w-1/3 md:mb-0 blog-card">
               
-                  <div className="w-full h-56 bg-gray-300 bg-center bg-cover rounded-lg shadow-md image-box" style={{ backgroundImage: `url(${post.image.url})` }}
-                      title={post.title}></div>
+                  <img className="w-full h-56 bg-gray-300 bg-center bg-cover rounded-lg shadow-md image-box" src={post.image.url}
+                      title={post.title}
+                      loading='lazy'
+                      />
 
                   <div className="z-10 inline-block p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg text-box">
                     
