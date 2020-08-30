@@ -87,6 +87,8 @@ const blogPost = ({ blogPost }) => {
       title={blogPost.title}
       description={blogPost.summary}
       image={blogPost.image.url}
+      url={`doit4thekidz.org/post/${blogPost.slug}`}
+      article
     />
     <Layout>
         <div className="min-h-screen py-16">
