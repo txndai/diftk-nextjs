@@ -68,7 +68,7 @@ function Magazine({ og, blogPosts }) {
                       </div>
                       {post.categories.map((category) => {
                           return (
-                            <span key={category} className='flex items-center justify-center flex-1 h-auto mx-1 text-xs leading-none category-title'>{category}</span>
+                            <span key={category} className='flex items-center justify-center flex-1 h-auto mx-1 text-xs leading-none category-title'>#{category}</span>
                         );
                         })}
                     </div>
@@ -77,7 +77,7 @@ function Magazine({ og, blogPosts }) {
                     <p className="h-20 overflow-y-scroll leading-relaxed md:text-xs lg:text-sm summary-post">{post.summary}</p>
                     <div className='flex flex-row justify-between mt-4'>
                       <span className='flex flex-col'>
-                        <p className="inline-block text-xs text-gray-600 border-b-2 border-blue-500 w-fit-content">{post.author.name}</p>
+                        <p className="inline-block text-xs text-gray-600 border-b-2 border-blue-500 w-fit-content">{post.author ? post.author.name : `anonymous`}</p>
                         <p className="text-xs text-gray-500 "><Date dateString={post.date} /></p>
                       </span>
                     </div>

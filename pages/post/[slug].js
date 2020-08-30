@@ -94,7 +94,7 @@ const blogPost = ({ blogPost }) => {
             </div>
             <div className="flex items-center justify-center">
                 <div className="inline-block text-sm">
-                <p className="leading-none text-center text-gray-900">{blogPost.author.name}</p>
+                <p className="leading-none text-center text-gray-900">{blogPost.author ? blogPost.author.name : `anonymous`}</p>
                 <p className="text-center text-gray-600"><Date dateString={blogPost.date} /></p>
                 </div>
             </div>
