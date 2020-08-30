@@ -11,7 +11,6 @@ function IndexPage() {
       <SEO
         title='DIFTK'
         description=' Home of Do It For The Kids Zimbabwe'
-        image='/logo.png'
         url='doit4thekidz.org'
       />
       <Layout>
