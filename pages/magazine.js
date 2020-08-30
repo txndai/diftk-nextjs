@@ -59,7 +59,7 @@ function Magazine({ og, blogPosts }) {
               
                   <img className="w-full h-56 bg-gray-300 bg-center bg-cover rounded-lg shadow-md image-box" src={post.image.url}
                       title={post.title}
-                      loading='lazy'
+                      loading="lazy"
                       />
 
                   <div className="z-10 inline-block p-5 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg text-box">

@@ -3,44 +3,13 @@ import Link from "next/link";
 import Date from '../../components/date'
 import ReactMarkdown from 'react-markdown/with-html'
 import Layout from "../../components/layout";
+import SEO from '../../components/seo'
 
 
 
+// This is what generates slugs at build time, for the blog posts
 
 const graphcms = new GraphQLClient(process.env.GRAPHQL_URL_ENDPOINT);
-
-export async function getStaticProps({ params }) {
-  const { blogPost } = await graphcms.request(
-    `
-    query Post($slug: String!) {
-      blogPost(where: { slug: $slug }) {
-        id
-        title
-        content
-        slug
-        image {
-          id
-          url
-        }
-        author {
-          id
-          name
-        }
-        date
-      }
-    }
-  `,
-    {
-      slug: params.slug,
-    }
-  );
-
-  return {
-    props: {
-      blogPost,
-    },
-  };
-}
 
 export async function getStaticPaths() {
   const { blogPosts } = await graphcms.request(`
@@ -70,9 +39,55 @@ export async function getStaticPaths() {
   };
 }
 
+// End of blog post slug generation
+
+export async function getStaticProps({ params }) {
+  const { blogPost } = await graphcms.request(
+    `
+    query Post($slug: String!) {
+      blogPost(where: { slug: $slug }) {
+        id
+        title
+        content
+        summary
+        slug
+        image {
+          id
+          url
+        }
+        author {
+          id
+          name
+        }
+        date
+      }
+    }
+  `,
+    {
+      slug: params.slug,
+    }
+  );
+
+  return {
+    props: {
+      blogPost,
+    },
+  };
+}
+
 const blogPost = ({ blogPost }) => {
-    console.log(blogPost)
+    // const {title, image: {url} } = blogPost
+    // const { og: {description}} = {image: {url}}
+    // const title = blogPost.title
+    // const og.description = blogPost.summary
+    // const og.image = blogPost.image.url
   return (
+    <>
+    <SEO 
+      title={blogPost.title}
+      description={blogPost.summary}
+      image={blogPost.image.url}
+    />
     <Layout>
         <div className="min-h-screen py-16">
         <div className="max-w-3xl mx-auto mb-16 rounded-lg ">
@@ -107,6 +122,7 @@ const blogPost = ({ blogPost }) => {
         </div>
         </div>
     </Layout>
+    </>
   );
 };
 
