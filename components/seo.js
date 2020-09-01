@@ -3,7 +3,7 @@ import Head from 'next/head'
 const seo = ({title, description, image, article, url}) => {
 
     return (
-        <Head>
+      <Head>
         <title>{`DIFTK - ${title}` || `DIFTK`}</title>
         <meta property="og:title" content={title || `DIFTK`} />
         <meta property="og:description" content={description ? description : `Do it for the kids`} />
