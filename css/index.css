@@ -9,7 +9,7 @@
     --highlight-color: #FBB040;
     --hr-color: #eee;
     --writing-body: #444;
-    --button-bg: #b8860b;
+    --button-bg: #FBB040;
   }
   
   [data-theme="dark"] {
@@ -65,7 +65,7 @@ body { font-family: 'Heebo', sans-serif; background-color: var(--bg-color); colo
 }
 .button-primary{
     background-color: var(--button-bg);
-    color: var(--bg-color);
+    color: var(--secondary-color);
     @apply inline-flex items-center px-3 py-1 text-base rounded focus:outline-none hover:bg-yellow-600;
 }
 .button-secondary{
