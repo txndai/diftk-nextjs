@@ -1,16 +1,46 @@
 @tailwind base;
 
+:root {
+    --primary-color: #0070f4;
+    --secondary-color: #666;
+    --font-color: #000;
+    --bg-color: #fff;
+    --heading-color: #000;
+    --highlight-color: #84ffb5;
+    --hr-color: #eee;
+    --writing-body: #444;
+    --uses-secondary-color: #bbb;
+  }
+  
+  [data-theme="dark"] {
+    --primary-color: #9A97F3;
+    --secondary-color: #666;
+    --font-color: #fff;
+    --bg-color: #010101;
+    --heading-color: #fff;
+    --highlight-color: #f81de6;
+    --hr-color: #222;
+    --writing-body: #eee;
+  }
+
+  * {
+    transition: background .2s linear;
+  }
+  
+
 /* fonts start */
-h1, h2 { font-family: 'Yanone Kaffeesatz', sans-serif; }
+h1, h2 { font-family: 'Yanone Kaffeesatz', sans-serif;}
 h3, h4, h5, h6 { font-family: 'Overlock', cursive; }
-body { font-family: 'Heebo', sans-serif;}
+body { font-family: 'Heebo', sans-serif; background-color: var(--bg-color); color: var(--font-color);}
 /* fonts end */
 
+/* blog stuffs start */
 .summary-post::-webkit-scrollbar { display: none;}
 .summary-post{ scrollbar-width: none;}
 
-.blog-card:hover .text-box { @apply  transition duration-300 ease-out transform scale-105 shadow-xl;}
-
+.blog-card:hover .text-box { 
+    @apply  transition duration-300 ease-out transform scale-105 shadow-xl;
+}
 .blog-card .image-box {
     @apply transition duration-500 ease-out transform;  
     filter: grayscale(14%) sepia(48%) blur(2px) contrast(106%);
@@ -23,13 +53,39 @@ body { font-family: 'Heebo', sans-serif;}
     -webkit-filter: none;
     -moz-filter: none;
 }
+/* blog stuffs end */
 
+/* misc start */
 .underline-custom {
     -webkit-text-decoration: #2c5282 solid underline;
     text-decoration: #2c5282 solid underline;
     -webkit-text-underline-position: auto;
     text-underline-position: auto;
+}
+.button-primary{
+    @apply inline-flex items-center px-3 py-1 text-base bg-yellow-400 rounded focus:outline-none hover:bg-yellow-500;
+}
+.bullseye{
+    @apply flex items-center justify-center;
+}
+.theme-switch-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    cursor: hand;
+    color: var(--heading-color);
+    outline: 0;
+    margin-top: 5px;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    @apply focus:outline-none;
   }
+  
+  .theme-switch-button svg {
+    fill: var(--heading-color);
+  }
+/* misc end */
 
 @tailwind components;
 @tailwind utilities;
