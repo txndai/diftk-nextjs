@@ -50,7 +50,7 @@ function Header() {
 
   return (
     <header className="">
-      <div className="container flex flex-col flex-wrap items-center px-5 mx-auto md:flex-row md:justify-between">
+      <div className="flex flex-col flex-wrap items-center px-5 mx-auto md:max-w-3xl lg:max-w-4xl md:flex-row md:justify-between">
         <Link href="/">
           <a className="flex items-center mb-4 font-medium title-font md:mb-0">
             <img src="/icons8-jake.svg" alt="" className="w-16 h-16 p-2 pb-3 text-white"/>

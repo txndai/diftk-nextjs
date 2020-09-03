@@ -1,7 +1,7 @@
 @tailwind base;
 
 :root {
-    --primary-color: #0070f4;
+    --primary-color: #2E3192;
     --secondary-color: hsl(0deg, 0%, 100%);
     --font-color: hsl(225deg, 25%, 10%);
     --bg-color: hsl(225deg, 25%, 95%);
@@ -13,7 +13,7 @@
   }
   
   [data-theme="dark"] {
-    --primary-color: #9A97F3;
+    --primary-color: #0070f4;
     --secondary-color: hsl(210deg, 22%, 15%);
     --font-color: hsl(0deg, 0%, 95%);
     --bg-color:hsl(210deg, 30%, 8%);
@@ -71,7 +71,7 @@ body { font-family: 'Heebo', sans-serif; background-color: var(--bg-color); colo
 .button-secondary{
     background-color: var(--secondary-color);
     color: var(--button-bg);
-    @apply inline-flex items-center px-3 py-1 text-base border-b-2 rounded border-secondary focus:outline-none hover:border-button hover:text-yellow-700;
+    @apply inline-flex items-center px-3 py-1 text-base border-b-2 rounded shadow-md border-secondary focus:outline-none hover:border-button;
 }
 .bullseye{
     @apply flex items-center justify-center;

@@ -62,7 +62,7 @@ function Magazine({ og, blogPosts }) {
                       loading="lazy"
                       /> */}
 
-                  <div className="z-10 inline-block p-5 -mt-10 overflow-hidden rounded-lg shadow-sm bg-secondary text-box">
+                  <div className="z-10 inline-block min-w-full p-5 -mt-10 overflow-hidden rounded-lg shadow-sm bg-secondary text-box">
                     
                     <div className="inline-flex header-content ">
                       {post.categories.map((category) => {
