@@ -6,10 +6,9 @@
     --font-color: #000;
     --bg-color: #fff;
     --heading-color: #000;
-    --highlight-color: #84ffb5;
+    --highlight-color: #FBB040;
     --hr-color: #eee;
     --writing-body: #444;
-    --uses-secondary-color: #bbb;
   }
   
   [data-theme="dark"] {
@@ -18,7 +17,7 @@
     --font-color: #fff;
     --bg-color: #010101;
     --heading-color: #fff;
-    --highlight-color: #f81de6;
+    --highlight-color: #FE5F55;
     --hr-color: #222;
     --writing-body: #eee;
   }

@@ -12,18 +12,18 @@ module.exports = {
         'fit-content': 'fit-content',
       },
       colors: {
-        primary: "var(--primary)",
-        secondary: "var(--secondary)",
-        main: "var(--main)",
-        background: "var(--background)",
+        primary: "var(--primary-color)",
+        secondary: "var(--secondary-color)",
+        highlight: "var(--highlight-color)",
+        background: "var(--bg-color)",
         header: "var(--header)",
-        accent: "var(--accent)",
+        writing: "var(--writing-body)"
       },
     },
     typography: {
       default: {
         css: {
-          color: 'var(--font-color)',
+          color: 'var(--writing-body)',
         },
       },
     },
