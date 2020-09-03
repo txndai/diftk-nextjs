@@ -110,9 +110,9 @@ const blogPost = ({ blogPost }) => {
                 </span>
             </div>
             <div className="flex items-center justify-center">
-                <div className="inline-block text-sm">
-                <h5 title='Blog Post Author' className="text-lg leading-none text-center ">{blogPost.author ? blogPost.author.name : `anonymous`}</h5>
-                <p title='Date Written' className="text-center"><Date dateString={blogPost.date} /></p>
+                <div className="flex flex-col items-center justify-center text-sm">
+                  <h5 title='Blog Post Author' className="inline-block text-lg leading-none text-center border-b-2 border-primary w-fit-content">{blogPost.author ? blogPost.author.name : `anonymous`}</h5>
+                  <p title='Date Written' className="text-center"><Date dateString={blogPost.date} /></p>
                 </div>
             </div>
             </div>
