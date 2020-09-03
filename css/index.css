@@ -57,8 +57,8 @@ body { font-family: 'Heebo', sans-serif; background-color: var(--bg-color); colo
 
 /* misc start */
 .underline-custom {
-    -webkit-text-decoration: #2c5282 solid underline;
-    text-decoration: #2c5282 solid underline;
+    -webkit-text-decoration: var(--highlight-color) solid underline;
+    text-decoration:var(--highlight-color) solid underline;
     -webkit-text-underline-position: auto;
     text-underline-position: auto;
 }

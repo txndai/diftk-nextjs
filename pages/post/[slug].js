@@ -98,9 +98,9 @@ const blogPost = ({ blogPost }) => {
             style={{ backgroundImage: `url(${blogPost.image.url})` }}
             title={blogPost.title}
             />
-            <div className="flex flex-col justify-between p-4 leading-normal bg-white rounded-b lg:rounded-b-none lg:rounded-r">
+            <div className="flex flex-col justify-between p-4 leading-normal rounded-b lg:rounded-b-none lg:rounded-r">
             <div className="mb-8">
-                <h1 className="my-4 text-5xl font-bold text-center text-gray-800 underline-custom">
+                <h1 className="my-4 text-5xl font-bold text-center underline-custom">
                 {blogPost.title}
                 </h1>
                 <span className='flex items-center justify-center'>
@@ -111,8 +111,8 @@ const blogPost = ({ blogPost }) => {
             </div>
             <div className="flex items-center justify-center">
                 <div className="inline-block text-sm">
-                <h5 title='Blog Post Author' className="text-lg leading-none text-center text-gray-800">{blogPost.author ? blogPost.author.name : `anonymous`}</h5>
-                <p title='Date Written' className="text-center text-gray-600"><Date dateString={blogPost.date} /></p>
+                <h5 title='Blog Post Author' className="text-lg leading-none text-center ">{blogPost.author ? blogPost.author.name : `anonymous`}</h5>
+                <p title='Date Written' className="text-center"><Date dateString={blogPost.date} /></p>
                 </div>
             </div>
             </div>

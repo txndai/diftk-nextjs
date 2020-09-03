@@ -20,6 +20,13 @@ module.exports = {
         accent: "var(--accent)",
       },
     },
+    typography: {
+      default: {
+        css: {
+          color: 'var(--font-color)',
+        },
+      },
+    },
   },
   variants: {},
   plugins: [
