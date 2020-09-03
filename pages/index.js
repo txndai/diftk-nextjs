@@ -24,7 +24,7 @@ function IndexPage() {
             <h1 className="mb-4 text-3xl font-bold title-font sm:text-6xl">DO IT FOR THE KIDS</h1>
             <p className="mb-8 leading-relaxed">Assisting in alleviating the plight of underprivileged children through enthusiastic service.</p>
             <div className="flex justify-center">
-              <button className="inline-flex items-center px-3 py-1 text-base text-yellow-600 bg-yellow-100 rounded focus:outline-none hover:shadow-sm hover:text-yellow-700">Button</button>
+              <button className="button-secondary ">Button</button>
               <button className="inline-flex px-6 py-2 ml-4 text-lg text-gray-700 bg-gray-200 border-0 rounded focus:outline-none hover:bg-gray-300">Button</button>
             </div>
           </div>

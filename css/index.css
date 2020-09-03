@@ -3,23 +3,25 @@
 :root {
     --primary-color: #0070f4;
     --secondary-color: hsl(0deg, 0%, 100%);
-    --font-color: #000;
+    --font-color: hsl(225deg, 25%, 10%);
     --bg-color: hsl(225deg, 25%, 95%);
-    --heading-color: #666;
+    --heading-color:  hsl(225deg, 15%, 15%);
     --highlight-color: #FBB040;
     --hr-color: #eee;
     --writing-body: #444;
+    --button-bg: #b8860b;
   }
   
   [data-theme="dark"] {
     --primary-color: #9A97F3;
     --secondary-color: hsl(210deg, 22%, 15%);
-    --font-color: #fff;
+    --font-color: hsl(0deg, 0%, 95%);
     --bg-color:hsl(210deg, 30%, 8%);
-    --heading-color: #fff;
+    --heading-color:hsl(210deg, 25%, 96%);
     --highlight-color: #FE5F55;
     --hr-color: #222;
     --writing-body: #eee;
+    --button-bg: #b8860b;
   }
 
   * {
@@ -62,7 +64,14 @@ body { font-family: 'Heebo', sans-serif; background-color: var(--bg-color); colo
     text-underline-position: auto;
 }
 .button-primary{
-    @apply inline-flex items-center px-3 py-1 text-base bg-yellow-400 rounded focus:outline-none hover:bg-yellow-500;
+    background-color: var(--button-bg);
+    color: var(--bg-color);
+    @apply inline-flex items-center px-3 py-1 text-base rounded focus:outline-none hover:bg-yellow-600;
+}
+.button-secondary{
+    background-color: var(--secondary-color);
+    color: var(--button-bg);
+    @apply inline-flex items-center px-3 py-1 text-base border-b-2 rounded border-secondary focus:outline-none hover:border-button hover:text-yellow-700;
 }
 .bullseye{
     @apply flex items-center justify-center;
@@ -82,7 +91,7 @@ body { font-family: 'Heebo', sans-serif; background-color: var(--bg-color); colo
   }
   
   .theme-switch-button svg {
-    fill: var(--heading-color);
+    fill: var(--highlight-color);
   }
 /* misc end */
 

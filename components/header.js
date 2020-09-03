@@ -12,7 +12,7 @@ const NavLinks = () => {
             { title: "About", route: "/about" }
           ].map(navigationItem => (
               <Link href={navigationItem.route} key={navigationItem.title}>
-                <a className="mx-2 font-bold hover:text-gray-900">{navigationItem.title}</a>
+                <a className="mx-2 font-bold ">{navigationItem.title}</a>
               </Link>
           ))}
         </>
@@ -49,7 +49,7 @@ function Header() {
   if (!mounted) return <div />
 
   return (
-    <header className="body-font">
+    <header className="">
       <div className="container flex flex-col flex-wrap items-center px-5 mx-auto md:flex-row md:justify-between">
         <Link href="/">
           <a className="flex items-center mb-4 font-medium title-font md:mb-0">

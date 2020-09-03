@@ -17,7 +17,8 @@ module.exports = {
         highlight: "var(--highlight-color)",
         background: "var(--bg-color)",
         header: "var(--header)",
-        writing: "var(--writing-body)"
+        writing: "var(--writing-body)",
+        button: "var(--button-bg)",
       },
     },
     typography: {
