@@ -2,10 +2,10 @@
 
 :root {
     --primary-color: #0070f4;
-    --secondary-color: #666;
+    --secondary-color: hsl(0deg, 0%, 100%);
     --font-color: #000;
-    --bg-color: #fff;
-    --heading-color: #000;
+    --bg-color: hsl(225deg, 25%, 95%);
+    --heading-color: #666;
     --highlight-color: #FBB040;
     --hr-color: #eee;
     --writing-body: #444;
@@ -13,9 +13,9 @@
   
   [data-theme="dark"] {
     --primary-color: #9A97F3;
-    --secondary-color: #666;
+    --secondary-color: hsl(210deg, 22%, 15%);
     --font-color: #fff;
-    --bg-color: #010101;
+    --bg-color:hsl(210deg, 30%, 8%);
     --heading-color: #fff;
     --highlight-color: #FE5F55;
     --hr-color: #222;
@@ -28,8 +28,8 @@
   
 
 /* fonts start */
-h1, h2 { font-family: 'Yanone Kaffeesatz', sans-serif;}
-h3, h4, h5, h6 { font-family: 'Overlock', cursive; }
+h1, h2 { font-family: 'Yanone Kaffeesatz', sans-serif; color: var(--heading-color);}
+h3, h4, h5, h6 { font-family: 'Overlock', cursive; color: var(--heading-color);}
 body { font-family: 'Heebo', sans-serif; background-color: var(--bg-color); color: var(--font-color);}
 /* fonts end */
 

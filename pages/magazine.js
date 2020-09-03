@@ -50,19 +50,19 @@ function Magazine({ og, blogPosts }) {
           <p className="w-full text-base leading-relaxed lg:w-1/2">
           People thrive when you empower them to shape their own story</p>
         </div>
-        <div className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4">
+        <div className="flex flex-wrap mb-4 -mx-4 sm:-m-4">
 
         {blogPosts.map((post) => {
           return (
             <Link key={post.id} as={`/post/${post.slug}`} href="/post/[slug]">
-              <a className="flex flex-col items-center justify-center max-w-sm p-4 mx-auto mb-6 md:w-1/3 md:mb-0 blog-card">
+              <a className="flex flex-col items-center justify-center max-w-sm p-4 mx-auto mb-6 md:w-1/3 md:mb-8 blog-card">
               
                   {/* <img className="w-full h-56 bg-gray-300 bg-center bg-cover rounded-lg shadow-md image-box" src={post.image.url}
                       title={post.title}
                       loading="lazy"
                       /> */}
 
-                  <div className="z-10 inline-block p-5 -mt-10 overflow-hidden rounded-lg shadow-lg text-background bg-writing text-box">
+                  <div className="z-10 inline-block p-5 -mt-10 overflow-hidden rounded-lg shadow-sm bg-secondary text-box">
                     
                     <div className="inline-flex header-content ">
                       {post.categories.map((category) => {
@@ -71,7 +71,7 @@ function Magazine({ og, blogPosts }) {
                         );
                         })}
                     </div>
-                    <div className="h-12 font-medium title-post">{post.title}</div>
+                    <h2 className="h-16 text-xl font-medium title-post">{post.title}</h2>
 
                     <p className="h-20 overflow-y-scroll leading-relaxed md:text-xs lg:text-sm summary-post">{post.summary}</p>
                     <div className='flex flex-row justify-between mt-4'>
