@@ -1,5 +1,11 @@
 @tailwind base;
 
+/* fonts start */
+h1, h2 { font-family: 'Yanone Kaffeesatz', sans-serif; }
+h3, h4, h5, h6 { font-family: 'Overlock', cursive; }
+body { font-family: 'Heebo', sans-serif;}
+/* fonts end */
+
 .summary-post::-webkit-scrollbar { display: none;}
 .summary-post{ scrollbar-width: none;}
 

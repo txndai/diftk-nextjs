@@ -1,6 +1,8 @@
 import "../css/index.css";
 import "../css/scrollbar.css";
 import Head from 'next/head'
+import GoogleFonts from "next-google-fonts";
+
 
 function MyApp({ Component, pageProps }) {
   const og = pageProps.data?.og
@@ -16,7 +18,9 @@ function MyApp({ Component, pageProps }) {
         {/* This is the favicon */}
         <link rel="shortcut icon" href="/tailwind-logo.svg" />
       </Head>
-
+      <GoogleFonts href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600;700&display=swap" />
+      <GoogleFonts href="https://fonts.googleapis.com/css2?family=Overlock:wght@700;900&display=swap" />
+      <GoogleFonts href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" />
       <Component {...pageProps} />
     </>
     )
