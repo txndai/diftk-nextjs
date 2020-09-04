@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Link from "next/link";
-import { Sun, Moon } from 'react-feather'
+import { Sun, Moon, Facebook, Twitter, Instagram } from 'react-feather'
 
 
 const NavLinks = () => {
@@ -51,11 +51,16 @@ function Header() {
   return (
     <header className="">
       <div className="flex flex-col flex-wrap items-center px-5 mx-auto md:max-w-3xl lg:max-w-4xl md:flex-row md:justify-between">
-        <Link href="/">
-          <a className="flex items-center mb-4 font-medium title-font md:mb-0">
-            <img src="/icons8-jake.svg" alt="" className="w-16 h-16 p-2 pb-3 text-white"/>
-          </a>
-        </Link>
+        <span className='mb-2 bullseye'>
+          <Link href="/">
+            <a className="flex items-center font-medium title-font md:mb-0">
+              <img src="/icons8-jake.svg" alt="" className="w-16 h-16 p-2 pb-3 text-white"/>
+            </a>
+          </Link>
+            <Facebook size={18}  className='mx-1 '/>
+            <Twitter size={18}  className='mx-1 '/>
+            <Instagram  size={18} className='mx-1 '/>
+        </span>
         
         <nav className="flex flex-wrap items-center justify-center text-base mx:auto">
           <NavLinks />

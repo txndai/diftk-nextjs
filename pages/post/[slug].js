@@ -84,7 +84,7 @@ const blogPost = ({ blogPost }) => {
   return (
     <>
     <SEO 
-      title={blogPost.title}
+      title={`DIFTK Magazine - ${blogPost.title}`}
       description={blogPost.summary}
       image={blogPost.image.url}
       url={`doit4thekidz.org/post/${blogPost.slug}`}

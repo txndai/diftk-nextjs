@@ -1,26 +1,55 @@
 function Footer() {
   return (
-    <footer className="bg-secondary">
-      <ul className="flex items-center justify-between max-w-4xl p-4 mx-auto text-sm md:p-8">
-        <li>
-          Created by{" "}
-          <a href="https://goosebumps.co.zw" target="_blank" className="font-bold">
-            Goosebumps Collective
-          </a>
-        </li>
+    <footer className="flex justify-center px-4 bg-secondary">
+        <div className="container py-6">
+            <h1 className="text-lg font-bold text-center lg:text-2xl">
+                Stay up to date with all things DIFTK, <br/>Magazine articles, projects and more.
+            </h1>
 
-        <li>
-          <a
-            href="https://github.com/txndai/diftk-nextjs/"
-            target="_blank"
-            className="font-bold"
-          >
-            GitHub
-          </a>
-        </li>
-      </ul>
+            <div className="flex justify-center mt-6">
+                <div className="rounded-md bg-background">
+                    <div className="flex flex-wrap justify-between md:flex-row">
+                        <input type="email" className="p-2 m-1 text-sm text-gray-700 appearance-none bg-background focus:outline-none focus:placeholder-background" placeholder="Enter your email" aria-label="Enter your email"/>
+                        <button className="w-full p-2 m-1 text-sm font-semibold uppercase rounded lg:w-auto button-secondary">subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <span className='bullseye'>
+                <hr className="w-1/5 h-1 mt-6 border-none bg-highlight" />
+            </span>
+
+            <div className="flex flex-col items-center justify-between mt-6 md:flex-row">
+                <div>
+                    Crafted with ❤️ by{" "}
+                    <a title='Goosebumps Collective' href="https://goosebumps.co.zw" target="_blank" classNameName="text-xl font-bold">
+                      Goosebumps Collective
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
-  );
-}
+    );
+  }
+  
+  export default Footer;
 
-export default Footer;
+  // <footer classNameName="bg-secondary">
+  //   <ul classNameName="flex items-center justify-between max-w-4xl p-4 mx-auto text-sm md:p-8">
+  //     <li>
+  //       Created by{" "}
+  //       <a href="https://goosebumps.co.zw" target="_blank" classNameName="font-bold">
+  //         Goosebumps Collective
+  //       </a>
+  //     </li>
+
+  //     <li>
+  //       <a
+  //         href="https://github.com/txndai/diftk-nextjs/"
+  //         target="_blank"
+  //         classNameName="font-bold"
+  //       >
+  //         GitHub
+  //       </a>
+  //     </li>
+  //   </ul>
+  // </footer>
