@@ -5,7 +5,13 @@ import { Smile, UserPlus, ExternalLink } from 'react-feather'
 
 
 const hero = {
-  backgroundImage: 'url(https://images.unsplash.com/photo-1598555739372-7cb6a91c6006?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80)'
+  backgroundImage: 'url(https://images.unsplash.com/photo-1547949003-9792a18a2601?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80)'
+}
+const volunteer = {
+  backgroundImage: 'url(https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80)'
+}
+const blog = {
+  backgroundImage: 'url(https://images.unsplash.com/photo-1516414447565-b14be0adf13e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=966&q=80)'
 }
 
 function IndexPage() {
@@ -100,6 +106,33 @@ function IndexPage() {
                   <img className='w-full rounded banner' src="/banner.png" alt="our sponsors' logos"/>
                 </div>
           </div>
+        </section>
+
+        <section id='help-me' className=" body-font">
+          <div className="container flex flex-col items-center justify-center px-5 py-24 mx-auto">
+              <h1 className='mb-2 text-3xl font-medium sm:text-3xl title-font'>How can you help?</h1>
+              <div className="container px-6 mx-auto">
+                <div className="mt-8 md:flex md:-mx-4">
+                    <div className="w-full h-64 overflow-hidden bg-center bg-cover rounded-md md:mx-4 md:w-1/2" style={volunteer}>
+                        <div className="flex items-center h-full bg-gray-900 bg-opacity-50">
+                            <div className="max-w-xl px-10">
+                                <h2 className="text-2xl font-semibold text-white">Volunteer</h2>
+                                <p className="mt-2 text-white">If you'd like to volunteer your time when DIFTK has fundraising events, or be notified of upcoming event, please [do action] and we would love to keep you in the loop of when we'll be doing it for the kids!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-full h-64 mt-8 overflow-hidden bg-center bg-cover rounded-md md:mx-4 md:mt-0 md:w-1/2" style={blog}>
+                        <div className="flex items-center h-full bg-gray-900 bg-opacity-50">
+                            <div className="max-w-xl px-10">
+                                <h2 className="text-2xl font-semibold text-white">Become a DIFTK blogger</h2>
+                                <p className="mt-2 text-white">Contact Joseph on xxx or email your article to xxx. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore facere provident molestias ipsam sint voluptatum pariatur.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <button className="mt-10 button-primary">Get Involved</button>
+            </div>
         </section>
       </Layout>
     </>
