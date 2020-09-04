@@ -57,16 +57,16 @@ function Header() {
               <img src="/icons8-jake.svg" alt="" className="w-16 h-16 p-2 pb-3 text-white"/>
             </a>
           </Link>
-            <Facebook size={18}  className='mx-1 '/>
-            <Twitter size={18}  className='mx-1 '/>
-            <Instagram  size={18} className='mx-1 '/>
+            <a href="https://www.facebook.com/doit4thekidz/" target='_blank' title='Facebook'><Facebook size={18}  className='mx-1 '/></a>
+            <a href="https://twitter.com/doit4thekidz_" target='_blank' title='Twitter'><Twitter size={18}  className='mx-1 '/></a>
+            <a href="https://www.instagram.com/doit4thekidz/" target='_blank' title='Instagram'><Instagram  size={18} className='mx-1 '/></a>
         </span>
         
         <nav className="flex flex-wrap items-center justify-center text-base mx:auto">
           <NavLinks />
         </nav>
         <span>
-          <button className="my-4 button-primary">Get Involved</button>
+          <Link href='/donate'><button className="my-4 button-primary">Donate/Volunteer</button></Link>
           <button className="theme-switch-button bullseye" onClick={() => switchTheme()}>
             {theme === 'dark' ? <Sun /> : <Moon />}
           </button>

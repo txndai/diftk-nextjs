@@ -25,6 +25,15 @@ module.exports = {
       default: {
         css: {
           color: 'var(--writing-body)',
+          blockquote: {
+            color: 'var(--writing-body)',
+          },
+          a: {
+            color: 'var(--primary-color)',
+            '&:hover': {
+              color: 'var(--highlight-color)',
+            },
+          },
         },
       },
     },

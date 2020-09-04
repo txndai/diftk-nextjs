@@ -1,6 +1,8 @@
 import Layout from "../components/layout";
 import SEO from '../components/seo'
 import { Smile, UserPlus, ExternalLink } from 'react-feather'
+import Link from "next/link";
+
 
 
 
@@ -70,7 +72,7 @@ function IndexPage() {
           </div>
         </section>
 
-        <section id='howww' className=" body-font">
+        <section id='sponsors' className=" body-font">
           <div className="container flex flex-col items-center justify-center px-5 py-24 mx-auto">
               <h1 className='mb-2 text-3xl font-medium sm:text-3xl title-font'>Our Sponsors</h1>
                 <div className='flex-col bullseye'>
@@ -131,7 +133,7 @@ function IndexPage() {
                     </div>
                 </div>
               </div>
-              <button className="mt-10 button-primary">Get Involved</button>
+              <button className="mt-10 button-primary">Get Started</button>
             </div>
         </section>
       </Layout>
