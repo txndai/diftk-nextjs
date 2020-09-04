@@ -52,7 +52,7 @@ function IndexPage() {
               </div>
             </div>
 
-            <div className='py-5 md:w-2/5 md:bullseye'>
+            <div className='pt-20 md:py-5 md:w-2/5 md:bullseye'>
               <div class="p-4 md:w-4/5 sm:w-1/2 w-full bullseye mx-auto">
                 <div className="px-4 py-6 rounded-lg shadow-sm bg-secondary">
                   <Smile className='mx-auto bullseye'/>
@@ -105,7 +105,7 @@ function IndexPage() {
                     </div>
                   </div>
                   {/* card end */}
-                  <img className='w-full rounded banner' src="/banner.png" alt="our sponsors' logos"/>
+                  <img title='Our Sponsors' className='w-full rounded banner' src="/banner.png" alt="our sponsors' logos"/>
                 </div>
           </div>
         </section>
