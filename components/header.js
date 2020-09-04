@@ -66,7 +66,7 @@ function Header() {
           <NavLinks />
         </nav>
         <span>
-          <Link href='/donate'><button className="my-4 button-primary">Donate/Volunteer</button></Link>
+          <Link href='/involved'><button title='Get involved - Donate/Volunteer' className="my-4 button-primary">Get involved</button></Link>
           <button className="theme-switch-button bullseye" onClick={() => switchTheme()}>
             {theme === 'dark' ? <Sun /> : <Moon />}
           </button>

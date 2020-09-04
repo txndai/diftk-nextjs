@@ -18,10 +18,10 @@ function Footer() {
                 <hr className="w-1/5 h-1 mt-6 border-none bg-highlight" />
             </span>
 
-            <div className="flex flex-col items-center justify-between mt-6 md:flex-row">
+            <div className="flex flex-col items-center justify-between mt-6 text-sm md:flex-row">
                 <div>
                     Crafted with ❤️ by{" "}
-                    <a title='Goosebumps Collective' href="https://goosebumps.co.zw" target="_blank" classNameName="text-xl font-bold">
+                    <a title='Goosebumps Collective' href="https://goosebumps.co.zw" target="_blank" classNameName="font-bold">
                       Goosebumps Collective
                     </a>
                 </div>

@@ -133,7 +133,7 @@ function IndexPage() {
                     </div>
                 </div>
               </div>
-              <button className="mt-10 button-primary">Get Started</button>
+              <Link href='/involved'><button title='Get Started - Volunteer/Donate' className="mt-10 button-primary">Get Started</button></Link>
             </div>
         </section>
       </Layout>
