@@ -93,6 +93,8 @@ body { font-family: 'Heebo', sans-serif; background-color: var(--bg-color); colo
   .theme-switch-button svg {
     fill: var(--highlight-color);
   }
+
+  
 /* misc end */
 
 @tailwind components;

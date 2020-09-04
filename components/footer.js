@@ -10,7 +10,7 @@ function Footer() {
                 <div className="rounded-md bg-background">
                     <div className="flex flex-wrap justify-between md:flex-row">
                         <input type="email" className="p-2 m-1 text-sm text-gray-700 appearance-none bg-background focus:outline-none focus:placeholder-background" placeholder="Enter your email" aria-label="Enter your email"/>
-                        <button className="w-full p-2 m-1 text-sm font-semibold uppercase rounded lg:w-auto button-secondary">subscribe</button>
+                        <button className="w-full p-2 m-1 text-sm font-semibold uppercase rounded lg:w-auto button-secondary"><span className='w-full text-center'>subscribe</span></button>
                     </div>
                 </div>
             </div>
