@@ -34,6 +34,24 @@ module.exports = {
               color: 'var(--highlight-color)',
             },
           },
+          h1: {
+            color: 'var(--writing-color)',
+          },
+          h2: {
+            color: 'var(--writing-color)',
+          },
+          h3: {
+            color: 'var(--writing-color)',
+          },
+          h4: {
+            color: 'var(--writing-color)',
+          },
+          h5: {
+            color: 'var(--writing-color)',
+          },
+          h6: {
+            color: 'var(--writing-color)',
+          },
         },
       },
     },
