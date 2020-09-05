@@ -13,7 +13,7 @@
   }
   
   [data-theme="dark"] {
-    --primary-color: #0070f4;
+    --primary-color: hsl(230deg, 92%, 63%);
     --secondary-color: hsl(210deg, 22%, 15%);
     --font-color: hsl(0deg, 0%, 95%);
     --bg-color:hsl(210deg, 30%, 8%);
@@ -92,6 +92,9 @@ body { font-family: 'Heebo', sans-serif; background-color: var(--bg-color); colo
   
   .theme-switch-button svg {
     fill: var(--highlight-color);
+  }
+  input, textarea{
+    @apply rounded;
   }
 
   
