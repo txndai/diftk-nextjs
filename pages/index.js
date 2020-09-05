@@ -1,7 +1,7 @@
 import Layout from "../components/layout";
 import SEO from '../components/seo'
-import { Smile, UserPlus, ExternalLink } from 'react-feather'
 import Link from "next/link";
+import { Smile, UserPlus, ExternalLink } from 'react-feather'
 
 
 
@@ -115,6 +115,7 @@ function IndexPage() {
               <h1 className='mb-2 text-3xl font-medium sm:text-3xl title-font'>How can you help?</h1>
               <div className="container px-6 mx-auto">
                 <div className="mt-8 md:flex md:-mx-4">
+
                     <div className="w-full h-64 overflow-hidden bg-center bg-cover rounded-md md:mx-4 md:w-1/2" style={volunteer}>
                         <div className="flex items-center h-full bg-gray-900 bg-opacity-75">
                             <div className="max-w-xl px-10">
@@ -131,6 +132,7 @@ function IndexPage() {
                             </div>
                         </div>
                     </div>
+
                 </div>
               </div>
               <Link href='/involved'><button title='Get Started - Volunteer/Donate' className="mt-10 button-primary">Get Started</button></Link>

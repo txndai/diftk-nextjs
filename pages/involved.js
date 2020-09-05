@@ -12,12 +12,12 @@ function Involved() {
         <div class="main-images mb-8 ">
             <div class="images grid grid-cols-1 md:grid-cols-3 gap-8">
 
-                <div class="image bg-secondary rounded-lg shadow-lg overflow-hidden">
-                    <a href="#">
-                        <img src="/volunteer.jpg" alt="A volunteer in a red t-shirt" title="Become a DIFTK Volunteer"/>
-                        <span class="text-center p-2  text-sm inline-block w-full">Volunteer</span>
-                    </a>
-                </div>
+                <Link href="/volunteer">
+                    <div class="image bg-secondary rounded-lg shadow-lg overflow-hidden cursor-pointer">
+                            <img src="/volunteer.jpg" alt="A volunteer in a red t-shirt" title="Become a DIFTK Volunteer"/>
+                            <span class="text-center p-2  text-sm inline-block w-full">Volunteer</span>
+                    </div>
+                </Link>
 
                 <Link href="/donate">
                     <div class="image bg-secondary rounded-lg shadow-lg overflow-hidden cursor-pointer" title="Donate to DIFTK">
@@ -26,12 +26,12 @@ function Involved() {
                     </div>
                 </Link>    
 
-                <div class="image bg-secondary rounded-lg shadow-lg overflow-hidden">
-                    <a href="#">
+                <Link href="/blogger">
+                    <div class="image bg-secondary rounded-lg shadow-lg overflow-hidden cursor-pointer">
                         <img src="/blogger.jpg" alt="laptop, phone, and coffee on a table" title="Become A DIFTK Blogger"/>
                         <span class="text-center p-2  text-sm inline-block w-full">Become A DIFTK Blogger</span>
-                    </a>
-               </div>
+                    </div>
+                </Link>
             </div>
         </div>
 

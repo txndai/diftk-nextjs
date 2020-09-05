@@ -1,51 +1,55 @@
 import Layout from "../components/layout";
+import { GraphQLClient } from "graphql-request";
 
-function Projects({ og }) {
+const graphcms = new GraphQLClient(process.env.GRAPHQL_URL_ENDPOINT);
+
+export async function getStaticProps() {
+    const { projects } = await graphcms.request(
+      `
+      query MyQuery() {
+        projects {
+          name
+          summary
+          icon {
+            url
+          }
+        }
+      }
+    `
+    );
+  
+    return {
+      props: {
+        projects,
+      },
+    };
+}
+
+function Projects({ projects }) {
   return (
     <Layout>
       <div className="flex flex-col space-y-6 md:flex-row md:space-x-6 md:space-y-0">
-        <div className="space-y-6 md:w-1/2">
-          {[
-            {
-              heading: `What is Tailwind?`,
-              body: `Tailwind CSS is a highly customizable, low-level CSS framework that gives you all
-              of the building blocks you need to build bespoke designs without any
-              annoying opinionated styles you have to fight to override.`,
-            },
-            {
-              heading: `What is Next.js?`,
-              body: `Next.js is a minimalistic framework for creating server-rendered
-              React applications.`,
-            },
-          ].map((section) => (
-            <div key={section.heading}>
-              <h2 className="mb-3 text-xl font-bold">{section.heading}</h2>
-              <p>{section.body}</p>
+        <div className="flex flex-wrap w-full mx-auto">
+        {projects.map(project => (
+            <div key={project.name} class="max-w-md py-4 px-8 bg-secondary shadow-lg rounded-lg my-20">
+            <div className="flex justify-center -mt-16 md:justify-end">
+              <img className="object-cover w-20 h-20 border-2 rounded-full border-writing" src={project.icon.url}/>
             </div>
+            <div>
+              <h2 className="text-3xl font-semibold ">{project.name}</h2>
+              <p className="mt-2 ">{project.summary}</p>
+            </div>
+            {/* <div className="flex justify-end mt-4">
+              <a target='_blank' href="https://www.fawcetts.co.zw/" className="text-xl font-medium text-highlight"><ExternalLink/></a>
+            </div> */}
+          </div>
           ))}
         </div>
 
-        <div className="md:w-1/2">
-          <img
-            alt="A one-eyed alien holding a broken cable connected between a server and a desktop computer"
-            className="w-full"
-            src="critter.svg"
-          />
-        </div>
+        
       </div>
     </Layout>
   );
 }
 
 export default Projects;
-
-Projects.getInitialProps = () => {
-  return {
-    data: {
-      og: {
-        description: "What Telmo uses on a daily basis.",
-        image: "https://telmo.im/og/uses.png"
-      }
-    }
-  }
-}
