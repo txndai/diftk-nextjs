@@ -53,6 +53,9 @@ module.exports = {
           h6: {
             color: 'var(--writing-color)',
           },
+          strong: {
+            color: 'var(--writing-color)',
+          },
         },
       },
     },

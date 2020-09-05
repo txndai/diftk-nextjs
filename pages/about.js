@@ -1,6 +1,9 @@
 import Layout from "../components/layout";
 import { GraphQLClient } from "graphql-request";
 import { Info } from 'react-feather'
+import Link from "next/link"
+import { Link2 } from 'react-feather'
+
 
 
 const graphcms = new GraphQLClient(process.env.GRAPHQL_URL_ENDPOINT);
@@ -64,7 +67,20 @@ function AboutPage({ teams }) {
           <p className='prose lg:prose-lg'>Yes, DIFTK is a real non-profit organisation that is registered as a Provincial Youth Association in the Advocacy, Education and Training with the Zimbabwe Youth Council as of 1 July 2016.</p>
         </article>
 
-        <div id="team" className='md:w-5/6'>
+        <div id="in-the-media" class="max-w-md py-4 px-8 bg-secondary shadow-lg rounded-lg my-20 mx-auto">
+            <div className="flex justify-center -mt-16 md:justify-end">
+              <img className="object-cover w-20 h-20 border-2 rounded-full border-writing" src="/media.png"/>
+            </div>
+            <div>
+              <h2 className="text-3xl font-semibold ">In The Media</h2>
+              <p className="mt-2 ">Snippets of the moments where the media has both acknowledged and supported the work of Do It For The Kids!</p>
+            </div>
+            <div className="flex justify-end mt-4">
+              <Link  href="/media"><a title='read more' className="text-xl font-medium text-highlight"><Link2/></a></Link>
+            </div>
+          </div>
+
+        <div id="team" className=''>
           <h1 className="my-4 text-5xl font-bold text-center underline-custom">
               Our Team
           </h1>
