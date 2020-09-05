@@ -34,7 +34,7 @@ function IndexPage() {
               <h1 className="mb-4 text-3xl font-bold title-font sm:text-6xl">DO IT FOR THE KIDS</h1>
               <p className="mb-8 leading-relaxed">Assisting in alleviating the plight of underprivileged children through enthusiastic service.</p>
               <div className="flex justify-center">
-                <button className="button-secondary ">Our Projects</button>
+                <Link href="/projects"><button className="button-secondary ">Our Projects</button></Link>
               </div>
             </div>
           </div>
