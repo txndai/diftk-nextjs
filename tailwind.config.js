@@ -19,6 +19,7 @@ module.exports = {
         header: "var(--header)",
         writing: "var(--writing-body)",
         button: "var(--button-bg)",
+        hrtoby: "var(--hr-color)",
       },
     },
     typography: {
