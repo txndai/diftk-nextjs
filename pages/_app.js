@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@doit4thekidz_" />
         {/* This is the favicon */}
-        <link rel="shortcut icon" href="/tailwind-logo.svg" />
+        <link rel="shortcut icon" href="/logo.png" />
       </Head>
       <GoogleFonts href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600;700&display=swap" />
       <GoogleFonts href="https://fonts.googleapis.com/css2?family=Overlock:wght@700;900&display=swap" />
