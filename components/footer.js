@@ -6,9 +6,9 @@ function Footer() {
                 Stay up to date with all things DIFTK, <br/>Magazine articles, projects and more.
             </h1>
 
-            <form name="footer" className="flex justify-center mt-6" data-netlify="true" method='POST' data-netlify-honeypot="bot-field" >
+            <form name="email subscribers" className="flex justify-center mt-6" data-netlify="true" method='POST' data-netlify-honeypot="bot-field" >
                 <input type="hidden" name="bot-field" />
-                <input type="hidden" name="form-name" value="footer" />
+                <input type="hidden" name="email subscribers" value="email subscribers" />
                 <div className="rounded-md bg-background">
                     <div className="flex flex-wrap justify-between md:flex-row">
                         <input type="email" className="p-2 m-1 text-sm text-gray-700 appearance-none bg-background focus:outline-none focus:placeholder-background" placeholder="Enter your email" name="email"/>
