@@ -32,7 +32,7 @@
 /* fonts start */
 h1, h2 { font-family: 'Yanone Kaffeesatz', sans-serif; color: var(--heading-color);}
 h3, h4, h5, h6 { font-family: 'Overlock', cursive; color: var(--heading-color);}
-body { font-family: 'Heebo', sans-serif; background-color: var(--bg-color); color: var(--font-color);}
+body { font-family: 'Heebo', sans-serif; background-color: var(--bg-color); color: var(--font-color); }
 /* fonts end */
 
 /* blog stuffs start */
@@ -97,7 +97,7 @@ body { font-family: 'Heebo', sans-serif; background-color: var(--bg-color); colo
     @apply rounded;
   }
 
-  
+ 
 /* misc end */
 
 @tailwind components;

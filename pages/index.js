@@ -118,7 +118,7 @@ function IndexPage() {
 
                     <div className="w-full h-64 overflow-hidden bg-center bg-cover rounded-md md:mx-4 md:w-1/2" style={volunteer}>
                         <div className="flex items-center h-full bg-gray-900 bg-opacity-75">
-                            <div className="max-w-xl px-10">
+                            <div className="h-full max-w-xl px-10 py-6">
                                 <h2 className="text-2xl font-semibold text-white">Volunteer</h2>
                                 <p className="mt-2 text-white">If you'd like to volunteer your time when DIFTK has fundraising events, or be notified of upcoming event, please [do action] and we would love to keep you in the loop of when we'll be doing it for the kids!</p>
                             </div>
@@ -126,9 +126,9 @@ function IndexPage() {
                     </div>
                     <div className="w-full h-64 mt-8 overflow-hidden bg-center bg-cover rounded-md md:mx-4 md:mt-0 md:w-1/2" style={blog}>
                         <div className="flex items-center h-full bg-gray-900 bg-opacity-75">
-                            <div className="max-w-xl px-10">
+                            <div className="h-full max-w-xl px-10 py-6">
                                 <h2 className="text-2xl font-semibold text-white">Become a DIFTK blogger</h2>
-                                <p className="mt-2 text-white">Contact Joseph on xxx or email your article to xxx. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore facere provident molestias ipsam sint voluptatum pariatur.</p>
+                                <p className="mt-2 text-white">Contact Joseph on <a href="tel:+263778129377">+263 778 129 377</a> or email your article to <a href="mailto:doit4thekids@gmail.com">doit4thekids@gmail.com</a>. </p>
                             </div>
                         </div>
                     </div>
