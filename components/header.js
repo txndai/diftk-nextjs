@@ -54,7 +54,7 @@ function Header() {
         <span className='mb-2 bullseye'>
           <Link href="/">
             <a className="flex items-center font-medium title-font md:mb-0">
-              <img src="/icons8-jake.svg" alt="" className="w-16 h-16 p-2 pb-3 text-white"/>
+              <img src="/logo.png" alt="" className="w-12 h-16 p-2 "/>
             </a>
           </Link>
             <a href="https://www.facebook.com/doit4thekidz/" target='_blank' title='Facebook'><Facebook size={18}  className='mx-1 '/></a>

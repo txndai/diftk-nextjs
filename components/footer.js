@@ -6,14 +6,16 @@ function Footer() {
                 Stay up to date with all things DIFTK, <br/>Magazine articles, projects and more.
             </h1>
 
-            <div className="flex justify-center mt-6">
+            <form name="footer" className="flex justify-center mt-6" data-netlify="true" method='POST' data-netlify-honeypot="bot-field" >
+                <input type="hidden" name="bot-field" />
+                <input type="hidden" name="form-name" value="footer" />
                 <div className="rounded-md bg-background">
                     <div className="flex flex-wrap justify-between md:flex-row">
                         <input type="email" className="p-2 m-1 text-sm text-gray-700 appearance-none bg-background focus:outline-none focus:placeholder-background" placeholder="Enter your email" aria-label="Enter your email"/>
-                        <button className="w-full p-2 m-1 text-sm font-semibold uppercase rounded lg:w-auto button-secondary"><span className='w-full text-center'>subscribe</span></button>
+                        <button type='submit' className="w-full p-2 m-1 text-sm font-semibold uppercase rounded lg:w-auto button-secondary"><span className='w-full text-center'>subscribe</span></button>
                     </div>
                 </div>
-            </div>
+            </form>
             <span className='bullseye'>
                 <hr className="w-1/5 h-1 mt-6 border-none bg-highlight" />
             </span>
