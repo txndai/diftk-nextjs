@@ -12,7 +12,7 @@ const volunteer = () => {
 
                 <form className="p-8 mx-auto my-5 rounded lg:w-1/2 md:w-2/3 bg-secondary" name="volunteer" data-netlify="true" method='POST' data-netlify-honeypot="bot-field">
                     <input type="hidden" name="bot-field" />
-                    <input type="hidden" name="form-name" value="contact" />
+                    <input type="hidden" name="form-name" value="volunteer" />
                     <div className="flex flex-col">
                     <div className="w-2/3 p-2 mx-auto">
                         <input className="w-full p-2 m-1 text-sm appearance-none bg-background focus:outline-none focus:placeholder-background" placeholder="Name" type="text" name='name' ></input>
