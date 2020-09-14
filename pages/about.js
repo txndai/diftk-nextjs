@@ -36,20 +36,20 @@ function AboutPage({ teams }) {
   console.log(teams)
   return (
     <Layout>
-      <div className="container flex flex-col items-center justify-center px-5 py-24 mx-auto md:w-5/6">
+      <div className="container flex flex-col items-center justify-center max-w-6xl px-5 py-24 mx-auto md:w-5/6">
         <article id='aboutUsText' className='text-center'>
           <h1 className="mt-4 text-5xl font-bold text-center underline-custom">
               Our Mission
           </h1>
-          <p className='pb-10 prose lg:prose-lg'>To assist in alleviating the plight of the underprivileged children in the Zimbabwean community through enthusiastic service.</p>
+          <p className='pb-10 mx-auto prose lg:prose-lg'>To assist in alleviating the plight of the underprivileged children in the Zimbabwean community through enthusiastic service.</p>
           <h1 className="mt-4 text-5xl font-bold text-center underline-custom">
               Our Vision
           </h1>
-          <p className='pb-10 prose lg:prose-lg'>To become a youth organisation recognised both nationally and internationally, as one which puts the basic needs of children first, and one which has a positive impact in ably assisting children realise their goals through its active and innovative participation.</p>
+          <p className='pb-10 mx-auto prose lg:prose-lg'>To become a youth organisation recognised both nationally and internationally, as one which puts the basic needs of children first, and one which has a positive impact in ably assisting children realise their goals through its active and innovative participation.</p>
           <h1 className="mt-4 text-5xl font-bold text-center underline-custom">
               Our Objectives
           </h1>
-          <p className='pb-10 prose lg:prose-lg'>
+          <p className='pb-10 mx-auto prose lg:prose-lg'>
             <ol>
               <li>To aid in transforming communities by inspiring people throughout Zimbabwe to open their hearts, accept and include disadvantaged children and thereby any child who is perceived as different.</li>
               <li>Raise funds to assist underprivileged children in accessing basic amenities, nutrition, and support them to access appropriate education.</li>
@@ -60,11 +60,11 @@ function AboutPage({ teams }) {
           <h1 className="mt-4 text-5xl font-bold text-center underline-custom">
               Purpose & Goals
           </h1>
-          <p className='pb-10 prose lg:prose-lg'>The Do it for the Kids Organisation shall exist to both educate and garner support from the Zimbabwean community and the world at large on issues and needs relating to the condition of underprivileged children around the country, and specifically relating these issues to the work of raising the brand of philanthropy and more importantly service for the glory of God.</p>
+          <p className='pb-10 mx-auto prose lg:prose-lg'>The Do it for the Kids Organisation shall exist to both educate and garner support from the Zimbabwean community and the world at large on issues and needs relating to the condition of underprivileged children around the country, and specifically relating these issues to the work of raising the brand of philanthropy and more importantly service for the glory of God.</p>
           <h1 className="mt-4 text-5xl font-bold text-center underline-custom">
               Is DIFTK a real organisation
           </h1>
-          <p className='pb-10 prose lg:prose-lg'>Yes, DIFTK is a real non-profit organisation that is registered as a Provincial Youth Association in the Advocacy, Education and Training with the Zimbabwe Youth Council as of 1 July 2016.</p>
+          <p className='pb-10 mx-auto prose lg:prose-lg'>Yes, DIFTK is a real non-profit organisation that is registered as a Provincial Youth Association in the Advocacy, Education and Training with the Zimbabwe Youth Council as of 1 July 2016.</p>
         </article>
 
         <div id="in-the-media" class="max-w-md py-4 px-8 bg-secondary shadow-lg rounded-lg my-20 mx-auto">
