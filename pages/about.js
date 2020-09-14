@@ -36,8 +36,8 @@ function AboutPage({ teams }) {
   console.log(teams)
   return (
     <Layout>
-      <div className="container flex flex-col items-center justify-center max-w-6xl px-5 py-24 mx-auto md:w-5/6">
-        <article id='aboutUsText' className='text-center'>
+      <div className="container flex flex-col items-center justify-center px-5 py-24 mx-auto md:w-5/6">
+        <article id='aboutUsText' className='max-w-3xl text-center'>
           <h1 className="mt-4 text-5xl font-bold text-center underline-custom">
               Our Mission
           </h1>
