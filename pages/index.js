@@ -48,7 +48,7 @@ function IndexPage() {
                 The organisation as a registered entity was initiated year beginning 2016, by a group of 3 post high school students who, whilst waiting to further their studies, were volunteering at an orphanage in the Bulawayo, Zimbabwe area, and felt a need regardless of larger existing organisations, to care for the underprivileged children in the home and others in similar or even more unfortunate conditions. As the outreach visits to the orphanage became more frequent, our numbers began to increase as well-wishers heard of the work we were doing. Eventually, volunteers began working together in a structured group with different individuals, some of whom were distinctly leaders and others administrators. Hence in this manner was the organisation birthed to glorify the Lord through service.
               </p>
               <div className="flex mt-6 md:mt-4">
-                <button className="button-secondary">About Us</button>
+                <Link href='/about'><button className="button-secondary">About Us</button></Link>
               </div>
             </div>
 
