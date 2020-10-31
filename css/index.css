@@ -44,9 +44,8 @@ body { font-family: 'Heebo', sans-serif; background-color: var(--bg-color); colo
 }
 .blog-card .image-box {
     @apply transition duration-500 ease-out transform;  
-    filter: grayscale(14%) sepia(48%) blur(2px) contrast(106%);
-    -webkit-filter: grayscale(14%) sepia(48%) blur(2px) contrast(106%);
-    -moz-filter: grayscale(14%) sepia(48%) blur(2px) contrast(106%);
+    filter: grayscale(92%) saturate(0.16) contrast(100%);
+    -webkit-filter: grayscale(92%) saturate(0.16) contrast(100%);
 }
 .blog-card:hover .image-box {
     @apply transition duration-500 ease-out transform border-2 border-blue-800 shadow-2xl;  

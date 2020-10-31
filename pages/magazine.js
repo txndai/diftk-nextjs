@@ -62,8 +62,7 @@ function Magazine({ og, blogPosts }) {
                     className="w-full h-56 bg-gray-300 bg-center bg-cover rounded-lg shadow-md image-box" 
                     src={post.image.url}
                     alt={post.title}
-                    width={600}
-                    height={450}
+                    unsized={true}
                     title={post.title}
                   />
 
