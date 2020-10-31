@@ -23,7 +23,7 @@ function Footer() {
             <div className="flex flex-col items-center justify-between mt-6 text-sm md:flex-row">
                 <div>
                     Crafted with ❤️ by{" "}
-                    <a title='Goosebumps Collective' href="https://goosebumps.co.zw" target="_blank" classNameName="font-bold">
+                    <a title='Goosebumps Collective' href="https://goosebumps.co.zw" target="_blank" className="font-bold">
                       Goosebumps Collective
                     </a>
                 </div>
@@ -34,24 +34,3 @@ function Footer() {
   }
   
   export default Footer;
-
-  // <footer classNameName="bg-secondary">
-  //   <ul classNameName="flex items-center justify-between max-w-4xl p-4 mx-auto text-sm md:p-8">
-  //     <li>
-  //       Created by{" "}
-  //       <a href="https://goosebumps.co.zw" target="_blank" classNameName="font-bold">
-  //         Goosebumps Collective
-  //       </a>
-  //     </li>
-
-  //     <li>
-  //       <a
-  //         href="https://github.com/txndai/diftk-nextjs/"
-  //         target="_blank"
-  //         classNameName="font-bold"
-  //       >
-  //         GitHub
-  //       </a>
-  //     </li>
-  //   </ul>
-  // </footer>

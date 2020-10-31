@@ -59,14 +59,14 @@ function Magazine({ og, blogPosts }) {
               <a className="flex flex-col items-center justify-center max-w-sm p-4 mx-auto mb-6 md:w-1/3 md:mb-8 blog-card">
               
                   <Image 
-                    className="w-full h-56 bg-gray-300 bg-center bg-cover rounded-lg shadow-md image-box" 
+                    className="w-4/5 h-48 mx-auto bg-gray-300 bg-center bg-cover rounded-lg shadow-md min-w-xxxs lg:min-w-xs image-box" 
                     src={post.image.url}
                     alt={post.title}
                     unsized={true}
                     title={post.title}
                   />
 
-                  <div className="z-10 inline-block min-w-full p-5 -mt-10 overflow-hidden rounded-lg shadow-sm bg-secondary text-box">
+                  <div className="z-10 inline-block p-5 -mt-10 overflow-hidden rounded-lg shadow-sm w-80 md:w-4/5 lg:min-w-full bg-secondary text-box">
                     
                     <div className="inline-flex header-content ">
                       {post.categories.map((category) => {
@@ -75,7 +75,7 @@ function Magazine({ og, blogPosts }) {
                         );
                         })}
                     </div>
-                    <h2 className="h-16 text-xl font-medium title-post">{post.title}</h2>
+                    <h2 className="text-lg font-medium lg:text-xl title-post">{post.title}</h2>
 
                     <p className="h-20 overflow-y-scroll leading-relaxed md:text-xs lg:text-sm summary-post">{post.summary}</p>
                     <div className='flex flex-row justify-between mt-4'>
