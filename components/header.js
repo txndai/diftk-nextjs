@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Link from "next/link";
 import { Sun, Moon, Facebook, Twitter, Instagram } from 'react-feather'
-import Image from 'next/image'
 
 
 const NavLinks = () => {
@@ -55,7 +54,7 @@ function Header() {
         <span className='mb-2 bullseye'>
           <Link href="/">
             <a className="flex items-center font-medium title-font md:mb-0">
-              <Image unsized={true} src="/logo.png" alt="" className="w-12 h-16 p-2 "/>
+              <img src="/logo.png" alt="" className="w-12 h-16 p-2 "/>
             </a>
           </Link>
             <a href="https://www.facebook.com/doit4thekidz/" target='_blank' title='Facebook'><Facebook size={18}  className='mx-1 '/></a>
