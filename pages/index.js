@@ -1,6 +1,7 @@
 import Layout from "../components/layout";
 import SEO from '../components/seo'
 import Link from "next/link";
+import Image from 'next/image'
 import { Smile, UserPlus, ExternalLink } from 'react-feather'
 
 
@@ -28,7 +29,7 @@ function IndexPage() {
         <section id='hero' className="body-font">
           <div className="container flex flex-col items-center px-5 py-24 mx-auto md:flex-row">
             <div className="w-5/6 mb-10 lg:max-w-lg lg:w-full md:w-1/2 md:mb-0">
-              <img className="object-cover object-center rounded" alt="hero" src="https://images.unsplash.com/photo-1506869640319-fe1a24fd76dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"/>
+              <Image unsized={true} className="object-cover object-center rounded" alt="hero image" src="https://images.unsplash.com/photo-1506869640319-fe1a24fd76dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"/>
             </div>
             <div className="flex flex-col items-center text-center lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 md:items-start md:text-left">
               <h1 className="mb-4 text-3xl font-bold title-font sm:text-6xl">DO IT FOR THE KIDS</h1>
