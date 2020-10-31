@@ -2,6 +2,7 @@ import Layout from "../components/layout";
 import { GraphQLClient } from "graphql-request";
 import Link from "next/link";
 import Date from '../components/date'
+import Image from 'next/image'
 
 
 const graphcms = new GraphQLClient(process.env.GRAPHQL_URL_ENDPOINT);
@@ -57,10 +58,14 @@ function Magazine({ og, blogPosts }) {
             <Link key={post.id} as={`/post/${post.slug}`} href="/post/[slug]">
               <a className="flex flex-col items-center justify-center max-w-sm p-4 mx-auto mb-6 md:w-1/3 md:mb-8 blog-card">
               
-                  {/* <img className="w-full h-56 bg-gray-300 bg-center bg-cover rounded-lg shadow-md image-box" src={post.image.url}
-                      title={post.title}
-                      loading="lazy"
-                      /> */}
+                  <Image 
+                    className="w-full h-56 bg-gray-300 bg-center bg-cover rounded-lg shadow-md image-box" 
+                    src={post.image.url}
+                    alt={post.title}
+                    width={600}
+                    height={450}
+                    title={post.title}
+                  />
 
                   <div className="z-10 inline-block min-w-full p-5 -mt-10 overflow-hidden rounded-lg shadow-sm bg-secondary text-box">
                     

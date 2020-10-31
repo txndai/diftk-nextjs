@@ -4,15 +4,10 @@
   "description": "DIFTK website iteration two",
   "main": "index.js",
   "scripts": {
-    "analyze:tailwind-css-class-order": "rustywind --dry-run .",
-    "analyze": "npm run analyze:tailwind-css-class-order",
-    "fix:tailwind-css-class-order": "rustywind --write .",
-    "fix": "npm run fix:tailwind-css-class-order",
     "dev": "next",
     "build": "next build",
     "export": "npm run build && next export",
-    "start": "next start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "next start"
   },
   "repository": {
     "type": "git",
@@ -26,13 +21,13 @@
   "homepage": "https://github.com/txndai/diftk-nextjs#readme",
   "dependencies": {
     "@tailwindcss/typography": "^0.2.0",
-    "date-fns": "^2.15.0",
+    "date-fns": "^2.16.1",
     "graphql-request": "^1.8.2",
     "gray-matter": "^4.0.2",
-    "next": "9.5.4",
+    "next": "10.0.0",
     "next-google-fonts": "^1.2.1",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
     "react-feather": "^2.0.8",
     "react-markdown": "^4.3.1",
     "remark": "^12.0.1",
@@ -40,7 +35,6 @@
   },
   "devDependencies": {
     "autoprefixer": "9.8.6",
-    "rustywind": "0.6.6",
-    "tailwindcss": "1.7.3"
+    "tailwindcss": "1.9.6"
   }
 }
