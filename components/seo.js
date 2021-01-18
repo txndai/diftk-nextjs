@@ -4,7 +4,7 @@ const seo = ({title, description, image, article, url}) => {
 
     return (
       <Head>
-        <title>{`DIFTK - ${title}` || `DIFTK`}</title>
+        <title>{title ? `DIFTK - ${title}` : `DIFTK`}</title>
         <meta property="og:title" content={title || `DIFTK`} />
         <meta property="og:description" content={description ? description : `Do it for the kids`} />
         <meta name="twitter:card" content="summary_large_image" />
